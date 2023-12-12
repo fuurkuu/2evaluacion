@@ -2,14 +2,14 @@
 #define TAMANO 5
 
 int devuelve_menor(int letra1, int letra2, int letra3) {
-  char respuesta;
-  if(letra1<letra2)
-    if letra1<letra3) respuesta=letra1;
-    else respuesta=letra3;
-  else
-    if(letra2<letra3) respuesta=letra2;
-    else respuesta=letra3;
-  return respuesta;
+    char respuesta;
+    if(letra1<letra2)
+        if (letra1<letra3) respuesta=letra1;
+        else respuesta=letra3;
+    else
+        if(letra2<letra3) respuesta=letra2;
+        else respuesta=letra3;
+    return respuesta;
 }
 
 int main(void) {
@@ -43,6 +43,9 @@ int main(void) {
     for (cont = 0; cont < TAMANO; cont++) {
         printf("%c ", letra[cont]);
     }
+
+    return 0;
+}
 
     return 0;
 }
