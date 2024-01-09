@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+
+int esDivisible(int numero) {
+    if (numero % 2 == 0 && numero % 3 == 0 && numero % 5 == 0 && numero % 7 == 0) {
+        return 1; 
+    } else {
+        return 0; 
+    }
+}
+
+int main() {
+    int numero;
+
+    printf("Ingrese un número: ");
+    scanf("%d", &numero);
+
+    if (esDivisible(numero)) {
+        printf("%d es divisible por 2, 3, 5 y 7.\n", numero);
+    } else {
+        printf("%d no es divisible por 2, 3, 5 y 7.\n", numero);
+    }
+
+    return 0;
+}
